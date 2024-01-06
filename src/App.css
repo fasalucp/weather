@@ -11,11 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  
   
 }
 .search input{
-  gap: 14px;
+  
   margin-top: 60px;
   width: 334px;
   text-align: center;
@@ -23,10 +23,11 @@
   border-radius: 25px;
 }
 .text{
- position: absolute;
-  color: black;
-  right: 148px;
-  top: 77px;
+ margin-top: 60px;
+  color: white;
+  padding:10px;
+  font-size: 35px;
+  
 }
 .card{
 display: flex;

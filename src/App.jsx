@@ -36,13 +36,18 @@ const Weather = () => {
     const find =()=>{
      forcast()
     }
+    const handlesubmit=(e)=>{
+      e.preventDefault()
+      find()
+    }
   return (
     <>
       <div className="container">
-        <div className="search">
+      <form onSubmit={handlesubmit}><div className="search">
           <input type="text" placeholder="enter your location" onChange={change}/>
-          <IoSearch className="text" onClick={find} />
-        </div>
+          <IoSearch className="text" onClick={find} /> 
+          
+        </div></form>
 
         <div>
           {data.map((value) => {
